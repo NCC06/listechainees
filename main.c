@@ -15,8 +15,10 @@ int main()
 	ft_insert_element(maListe, 2);
 	ft_insert_element(maListe, 3);
 	ft_insert_element(maListe, 4);
-	ft_insert_at_place(maListe, 0, 7);
+	ft_insert_at_place(maListe, 3, 7);
+	ft_show_element(maListe, 2);
 	ft_show_list(maListe);
+	ft_size_list(maListe);
 
 	return EXIT_SUCCESS;
 }

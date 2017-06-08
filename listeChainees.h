@@ -101,7 +101,7 @@ void ft_show_list(List *list)
 
 int ft_show_element(List *list, int elementNumber)
 {
-	int i = 1;
+	int i = 0;
 	if (list == NULL)
 	{
 		exit(EXIT_FAILURE);
@@ -115,7 +115,7 @@ int ft_show_element(List *list, int elementNumber)
 		i++;
 	}
 
-	printf("%d ", actuel->number);
+	printf("(%d) ", actuel->number);
 	
 	return actuel->number;
 }
@@ -160,9 +160,7 @@ int ft_size_list(List *list)
 		actuel = actuel->next;	
 	}
 	
-	printf("%d", size);
+	printf("[%d]", size);
 
 	return size;
 }
-
-
